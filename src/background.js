@@ -27,6 +27,9 @@
 
     let gameFrame = 0
 
+    const audio = new Audio()
+    audio.src = '/assets/sounds/bg-main.wav'
+    audio.loop = true
     class Layer {
         constructor(image, speedModifier) {
             this.x = 0
@@ -60,6 +63,7 @@
     const layerArray = [layer1, layer2, layer3, layer4, layer5]
 
     function animate() {
+        audio.play()
         ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT)
         // ctx.drawImage(bgLayer4, x, 0)
         // x = x < -1000 ? 0 : (x-gameSpeed)
@@ -70,8 +74,7 @@
         gameFrame--
         requestAnimationFrame(animate)
     }
+ 
     animate()
-
-
 
 }()
