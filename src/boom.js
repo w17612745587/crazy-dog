@@ -45,9 +45,9 @@
             ctx.save()
             ctx.translate(this.x, this.y)
             ctx.rotate(this.angle)
-            // if(this.audio.played.length ===0){
-            //     this.audio.play()
-            // }
+            if(this.audio.played.length ===0){
+                this.audio.play()
+            }
             ctx.drawImage(this.image, this.frame * this.spriteWidth, 0, this.spriteWidth, this.spriteHeight, -this.width/2, -this.height/2, this.width, this.height)
             ctx.restore()
         }

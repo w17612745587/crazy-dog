@@ -8,12 +8,26 @@
         #boom-canvas{
             background: #000;
         }
+        #enemy-canvas{
+            border: 3px solid black;
+            width: 500px;
+            height: 800px;
+
+        }
+        img {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <canvas id="boom-canvas"/>
+    <canvas id="boom-canvas"></canvas>
+    <canvas id="enemy-canvas"></canvas>
+    <img id="worm" src="/assets/imgs/enemy_worm.png"/>
+    <img id="ghost" src="/assets/imgs/enemy_ghost.png"/>
+    <img id="spider" src="/assets/imgs/enemy_spider.png"/>
 </body>
 </html>
 <script src="/src/app.js"></script>
 <script src="/src/background.js"></script>
 <script src="/src/boom.js"></script>
+<script src="/src/enemy.js"></script>
