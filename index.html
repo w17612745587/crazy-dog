@@ -17,17 +17,35 @@
         img {
             display: none;
         }
+        #canvas1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: black;
+            border:  3px solid black;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        body{
+            background: #000;
+        }
     </style>
 </head>
 <body>
-    <canvas id="boom-canvas"></canvas>
+    <canvas id="canvas1"></canvas>
+    <img id="playerImage" src="/assets//imgs/player.png" />
+    <img id="backgroundImage" src="/assets/imgs/background_single.png" />
+    <img id="enemyImage" src="/assets/imgs/enemy_worm.png" />
+    <!-- <canvas id="boom-canvas"></canvas>
     <canvas id="enemy-canvas"></canvas>
     <img id="worm" src="/assets/imgs/enemy_worm.png"/>
     <img id="ghost" src="/assets/imgs/enemy_ghost.png"/>
-    <img id="spider" src="/assets/imgs/enemy_spider.png"/>
+    <img id="spider" src="/assets/imgs/enemy_spider.png"/> -->
 </body>
 </html>
-<script src="/src/app.js"></script>
+<!-- <script src="/src/app.js"></script>
 <script src="/src/background.js"></script>
 <script src="/src/boom.js"></script>
-<script src="/src/enemy.js"></script>
+<script src="/src/enemy.js"></script> -->
+<script src="/src/script.js"></script>

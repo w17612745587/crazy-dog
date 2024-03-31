@@ -33,7 +33,6 @@
             } else {
                 this.enemyTimer += deltaTime
             }
-            console.log(this.enemies)
             this.enemies.forEach(item => item.update(deltaTime))
         }
 
