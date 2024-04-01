@@ -86,7 +86,7 @@ window.addEventListener('load', function () {
             this.image = document.getElementById('playerImage')
             this.frameX = 0
             this.frameY = 0
-            this.maxFrame = 8
+            this.maxFrame = 7
             this.fps = 20
             this.frameTimer = 0
             this.frameInterval = 1000 / this.fps
