@@ -4,35 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #boom-canvas{
-            background: #000;
-        }
-        #enemy-canvas{
-            border: 3px solid black;
-            width: 500px;
-            height: 800px;
-
-        }
-        img {
-            display: none;
-        }
-        #canvas1{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            /* background: black; */
-            /* border:  3px solid black; */
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-    </style>
+    <link href="./index.css" rel="stylesheet" />
 </head>
 <body>
     <canvas id="canvas1"></canvas>
-    <img id="dog" src="/assets/imgs/white-dog.png" />
+    <img id="player" src="/assets/imgs/player.png" />
+    <img id="enemy_fly" class="enemy" src="/assets/imgs/enemy_fly.png" />
+    <img id="enemy_plant" class="enemy" src="/assets/imgs/enemy_plant.png" />
+    <img id="enemy_spider_big" class="enemy" src="/assets/imgs/enemy_spider_big.png" />
+    <!-- <img id="dog" src="/assets/imgs/white-dog.png" /> -->
     <!-- <img id="playerImage" src="/assets//imgs/player.png" />
     <img id="backgroundImage" src="/assets/imgs/background_single.png" />
     <img id="enemyImage" src="/assets/imgs/enemy_worm.png" /> -->
@@ -43,8 +23,9 @@
     <img id="spider" src="/assets/imgs/enemy_spider.png"/> -->
 </body>
 </html>
+<script src="/src/main.js" type="module"></script>
 <!-- <script src="/src/app.js"></script>
 <script src="/src/background.js"></script>
 <script src="/src/boom.js"></script>
 <script src="/src/enemy.js"></script> -->
-<script src="/src/app.js" type="module"></script>
+<!-- <script src="/src/app.js" type="module"></script> -->
